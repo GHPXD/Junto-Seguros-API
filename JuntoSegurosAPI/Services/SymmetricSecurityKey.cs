@@ -2,7 +2,7 @@
 {
     internal class SymmetricSecurityKey
     {
-        private byte[] bytes;
+        public byte[] bytes;
 
         public SymmetricSecurityKey(byte[] bytes)
         {

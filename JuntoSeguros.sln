@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuntoSegurosAPI", "JuntoSegurosAPI\JuntoSegurosAPI.csproj", "{533C1DFB-3B72-4B92-825C-3A5EEF8EE038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuntoSegurosAPI", "JuntoSegurosAPI\JuntoSegurosAPI.csproj", "{533C1DFB-3B72-4B92-825C-3A5EEF8EE038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuntoSegurosAPI.Tests", "JuntoSegurosAPI.Tests\JuntoSegurosAPI.Tests.csproj", "{D670C7B3-ADD0-4C96-87E9-A45E31E8297C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{533C1DFB-3B72-4B92-825C-3A5EEF8EE038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{533C1DFB-3B72-4B92-825C-3A5EEF8EE038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{533C1DFB-3B72-4B92-825C-3A5EEF8EE038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D670C7B3-ADD0-4C96-87E9-A45E31E8297C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D670C7B3-ADD0-4C96-87E9-A45E31E8297C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D670C7B3-ADD0-4C96-87E9-A45E31E8297C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D670C7B3-ADD0-4C96-87E9-A45E31E8297C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

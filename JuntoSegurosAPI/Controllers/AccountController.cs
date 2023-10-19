@@ -17,45 +17,45 @@ namespace JuntoSegurosAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> RegisterAsync(Models.RegisterModel model)
         {
-            var result = await _accountService.RegisterAsync(model);
-            if (result.Succeeded)
+            var (Succeeded, Errors, Token) = await _accountService.RegisterAsync(model);
+            if (Succeeded)
             {
-                return Ok(new { Token = result.Token });
+                return Ok(new { Token });
             }
-            return BadRequest(result.Errors);
+            return BadRequest(Errors);
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> LoginAsync(Models.LoginModel model)
         {
-            var result = await _accountService.LoginAsync(model);
-            if (result.Succeeded)
+            var (Succeeded, Errors, Token) = await _accountService.LoginAsync(model);
+            if (Succeeded)
             {
-                return Ok(new { Token = result.Token });
+                return Ok(new { Token });
             }
-            return BadRequest(result.Errors);
+            return BadRequest(Errors);
         }
 
         [HttpPost("changePassword")]
         public async Task<IActionResult> ChangePasswordAsync(Models.ChangePasswordModel model)
         {
-            var result = await _accountService.ChangePasswordAsync(User, model);
-            if (result.Succeeded)
+            var (Succeeded, Errors) = await _accountService.ChangePasswordAsync(User, model);
+            if (Succeeded)
             {
                 return Ok();
             }
-            return BadRequest(result.Errors);
+            return BadRequest(Errors);
         }
 
         [HttpPost("resetPassword")]
         public async Task<IActionResult> ResetPasswordAsync(string email)
         {
-            var result = await _accountService.ResetPasswordAsync(email);
-            if (result.Succeeded)
+            var (Succeeded, Errors) = await _accountService.ResetPasswordAsync(email);
+            if (Succeeded)
             {
                 return Ok();
             }
-            return BadRequest(result.Errors);
+            return BadRequest(Errors);
         }
     }
 

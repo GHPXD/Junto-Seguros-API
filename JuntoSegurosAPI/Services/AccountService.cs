@@ -35,7 +35,7 @@ namespace JuntoSegurosAPI.Services
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, isPersistent: false);
-                return (true, new string[] { }, GenerateJwtToken(model.Email, user));
+                return (true, Array.Empty<string>(), GenerateJwtToken(model.Email, user));
             }
 
             return (false, result.Errors.Select(x => x.Description).ToArray(), null);
@@ -48,7 +48,7 @@ namespace JuntoSegurosAPI.Services
             if (result.Succeeded)
             {
                 var appUser = _userManager.Users.SingleOrDefault(r => r.Email == model.Email);
-                return (true, new string[] { }, GenerateJwtToken(model.Email, appUser));
+                return (true, Array.Empty<string>(), GenerateJwtToken(model.Email, appUser));
             }
 
             return (false, new string[] { "Invalid login attempt." }, null);
@@ -61,7 +61,7 @@ namespace JuntoSegurosAPI.Services
 
             if (result.Succeeded)
             {
-                return (true, new string[] { });
+                return (true, Array.Empty<string>());
             }
 
             return (false, result.Errors.Select(x => x.Description).ToArray());
@@ -71,9 +71,9 @@ namespace JuntoSegurosAPI.Services
         {
             var claims = new List<Claim>
          {
-             new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Sub, email),
-             new Claim(System.IdentityModel.Tokens.Jwt.Jti, Guid.NewGuid().ToString()),
-             new Claim(ClaimTypes.NameIdentifier, user.Id)
+                new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Sub, email),
+                new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(ClaimTypes.NameIdentifier, user.Id)
          };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["TokenInformation:Key"]));

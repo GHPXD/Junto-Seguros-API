@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using JuntoSegurosAPI.Data;
-
+using Microsoft.EntityFrameworkCore;
 namespace JuntoSegurosAPI
 {
     public class Startup
@@ -17,11 +17,8 @@ namespace JuntoSegurosAPI
         {
             services.AddControllers();
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
-                    mySqlOptions => mySqlOptions
-                        .ServerVersion(new Version(8, 0, 21), ServerType.MySql)
-                        .CharSetBehavior(CharSetBehavior.NeverAppend)));
+            IServiceCollection serviceCollection = services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
+                    mySqlOptions => mySqlOptions.ServerVersion(new Version(8, 0, 21), ServerType.MySql).CharSetBehavior(CharSetBehavior.NeverAppend)));
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();

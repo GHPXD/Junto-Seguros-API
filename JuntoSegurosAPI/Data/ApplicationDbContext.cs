@@ -1,12 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace JuntoSegurosAPI.Data
+﻿namespace JuntoSegurosAPI
 {
-    public class ApplicationDbContext : IdentityDbContext
+    internal class ApplicationDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
     }
 }

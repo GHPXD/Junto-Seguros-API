@@ -2,8 +2,8 @@
 {
     internal class SigningCredentials
     {
-        private SymmetricSecurityKey key;
-        private object hmacSha256;
+        public SymmetricSecurityKey key;
+        public object hmacSha256;
 
         public SigningCredentials(SymmetricSecurityKey key, object hmacSha256)
         {

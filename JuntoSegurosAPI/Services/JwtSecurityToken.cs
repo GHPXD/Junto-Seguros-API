@@ -4,11 +4,11 @@ namespace JuntoSegurosAPI.Services
 {
     internal class JwtSecurityToken
     {
-        private string? v1;
-        private string? v2;
-        private List<Claim> claims;
-        private DateTime expires;
-        private SigningCredentials signingCredentials;
+        public string? v1;
+        public string? v2;
+        public List<Claim> claims;
+        public DateTime expires;
+        public SigningCredentials signingCredentials;
 
         public JwtSecurityToken(string? v1, string? v2, List<Claim> claims, DateTime expires, SigningCredentials signingCredentials)
         {
