@@ -7,3 +7,12 @@ C:\Users\ghp17\OneDrive\Área de Trabalho\Junto Seguros\JuntoSeguros\JuntoSeguro
 C:\Users\ghp17\OneDrive\Área de Trabalho\Junto Seguros\JuntoSeguros\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ghp17\OneDrive\Área de Trabalho\Junto Seguros\JuntoSeguros\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.RazorAssemblyInfo.cache
 C:\Users\ghp17\OneDrive\Área de Trabalho\Junto Seguros\JuntoSeguros\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.RazorAssemblyInfo.cs
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.csproj.AssemblyReference.cache
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.AssemblyInfoInputs.cache
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.AssemblyInfo.cs
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.csproj.CoreCompileInputs.cache
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.RazorAssemblyInfo.cache
+C:\Users\ghp17\OneDrive\Área de Trabalho\Nova pasta\Junto-Seguros-API\JuntoSegurosAPI\obj\Debug\net7.0\JuntoSegurosAPI.RazorAssemblyInfo.cs
